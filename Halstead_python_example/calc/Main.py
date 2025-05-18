@@ -7,7 +7,7 @@ def main():
 
 
     # get file
-    filePath = "Calculator.py"
+    filePath = "./Calculator.py"
     with open(filePath, 'r') as file:
         content = file.read()
 
