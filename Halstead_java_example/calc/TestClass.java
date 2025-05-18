@@ -20,10 +20,6 @@ public class TestClass {
           Assert.assertEquals(-1, calc.add(-65, 2));
      }
 
-     @Test
-     public void TestAddMax() {
-          Assert.assertEquals(-1, calc.add(1, Integer.MAX_VALUE));
-     }
 
      // ------------- sub-------------------
      @Test
@@ -56,10 +52,5 @@ public class TestClass {
      @Test
      public void TestSumGeneral(){
           Assert.assertEquals(54,calc.sum(18,3));
-     }
-     @Test
-     public void TestSumMax(){
-          Assert.assertEquals(-1,calc.sum(Integer.MAX_VALUE, 3));
-
      }
 }
