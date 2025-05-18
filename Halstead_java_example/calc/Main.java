@@ -52,7 +52,9 @@ public class Main {
         } catch (IOException e) {
             System.out.println("no file found!");
         }
-      //  runTests();
+      System.out.println("finished");
+        //  runTests();
+
     }
 
     private static void runTests() {

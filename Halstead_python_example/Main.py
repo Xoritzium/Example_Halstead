@@ -35,9 +35,10 @@ def main():
 
     print(f"program Length = {programLength} \nvocabulary Size = {vocabularySize}\nprogram volume = {programVolume:.2f}\ndifficulty = {difficulty:.2f}\nlevel = {level:.2f}\neffort = {effort:.2f}\nimplementation Time = {implementationTime:.2f} sec\nbugs = {bugs:.2f}")    
 
+    print("finished")
     #run tests
     tests = TestClass() 
-    tests.runTests()
+  #  tests.runTests()
 
 if __name__ == "__main__":
     main()
