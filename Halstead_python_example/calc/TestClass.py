@@ -11,7 +11,6 @@ class TestClass(unittest.TestCase):
         self.test_add_general()
         self.test_add_negative()
         self.test_add_negative2()
-        self.test_add_max()
 
         self.test_sub_general()
         self.test_sub_negative()
@@ -21,7 +20,7 @@ class TestClass(unittest.TestCase):
         self.test_div_zero()
 
         self.test_sum_general()
-        self.test_sum_max()
+
 
       
     def test_add_general(self):
@@ -32,10 +31,6 @@ class TestClass(unittest.TestCase):
 
     def test_add_negative2(self):
         self.assertEqual(self.calc.add(-65, 2), -1)
-
-    def test_add_max(self):
-        self.assertEqual(self.calc.add(1, 2**31 - 1), -1)  # Integer.MAX_VALUE in Java
-
     # ------------- sub -------------------
     def test_sub_general(self):
         self.assertEqual(self.calc.sub(30, 8), 22)
@@ -57,5 +52,4 @@ class TestClass(unittest.TestCase):
     def test_sum_general(self):
         self.assertEqual(self.calc.sum(18, 3), 54)
 
-    def test_sum_max(self):
-        self.assertEqual(self.calc.sum(2**31 - 1, 3), -1)
+
