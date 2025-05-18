@@ -37,7 +37,7 @@ def main():
 
     #run tests
     tests = TestClass() 
-    #tests.runTests()
+    tests.runTests()
 
 if __name__ == "__main__":
     main()
