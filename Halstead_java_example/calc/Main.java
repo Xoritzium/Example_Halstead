@@ -9,16 +9,11 @@ import org.junit.runner.notification.Failure;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Initializing");
-
-        // read file
-
         String file;
         try {
             String path = "./src/Calculator.java";
             file = Files.readString(Path.of(path));
 
-            // System.out.println("file: " + file);
             // get basic halstead values
             HalsteadMetrics hal = new HalsteadMetrics();
             int[] result = hal.calculateHalstead(file);
@@ -52,7 +47,7 @@ public class Main {
         } catch (IOException e) {
             System.out.println("no file found!");
         }
-      //  runTests();
+        runTests();
     }
 
     private static void runTests() {
