@@ -7,7 +7,7 @@ def main():
 
 
     # get file
-    filePath = "Calculator.py"
+    filePath = "./Calculator.py"
     with open(filePath, 'r') as file:
         content = file.read()
 
@@ -37,7 +37,7 @@ def main():
 
     #run tests
     tests = TestClass() 
-    #tests.runTests()
+    tests.runTests()
 
 if __name__ == "__main__":
     main()
