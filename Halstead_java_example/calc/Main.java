@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Initializing");
-     
+
         // read file
 
         String file;
@@ -23,7 +23,7 @@ public class Main {
             HalsteadMetrics hal = new HalsteadMetrics();
             int[] result = hal.calculateHalstead(file);
             // additional values
-            System.out.println("--------"+path + "--------");
+            System.out.println("--------" + path + "--------");
             System.out.println(
                     "n1 = " + result[0] + "\nn2 = " + result[1] + "\nN1 = " + result[2] + "\nN2 = "
                             + result[3]);
@@ -52,15 +52,13 @@ public class Main {
         } catch (IOException e) {
             System.out.println("no file found!");
         }
-
-
-            runTests();
+      //  runTests();
     }
 
     private static void runTests() {
         Result result = JUnitCore.runClasses(TestClass.class);
         for (Failure f : result.getFailures()) {
-            System.err.println("test failed: " + f.toString() );
+            System.err.println("test failed: " + f.toString());
         }
     }
 

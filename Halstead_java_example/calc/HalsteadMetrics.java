@@ -11,7 +11,7 @@ public class HalsteadMetrics {
         String[] lines = file.split("\\R"); // \R = any linebreak
         StringBuilder codeNoComments = new StringBuilder();
         for (String line : lines) {
-            if (!line.trim().startsWith("#")) {
+            if (!line.trim().startsWith("//")) {
                 codeNoComments.append(line).append("\n");
             }
         }
